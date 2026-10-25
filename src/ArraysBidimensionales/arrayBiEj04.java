@@ -5,17 +5,11 @@ public class arrayBiEj04 {
 
         int[][] arrayBiNumeros = new int[3][6];
 
-        System.out.println("Escriba el valor columna por columna");
-
         for (int fila = 0; fila < arrayBiNumeros.length; fila++) {
             for (int columna = 0; columna < arrayBiNumeros[fila].length; columna++) {
 
                 arrayBiNumeros[fila][columna] = (int)(Math.random()*900)+100;
 
-            }
-
-            if (fila < arrayBiNumeros.length-1) {
-                System.out.println("Esta es la fila " + (fila+1));
             }
         }
 

@@ -1,5 +1,4 @@
 package ArraysBidimensionales;
-
 import java.util.Scanner;
 
 public class arrayBiEj07 {
