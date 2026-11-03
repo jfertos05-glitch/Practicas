@@ -6,7 +6,7 @@ public class funcionesEj16 {
         System.out.print("Los números capicua son: ");
 
         for (int i = 0; i < 99999; i++) {
-            if (matematicas.Varias.esCapicua(i)) {
+            if (Varias.esCapicua(i)) {
                 System.out.print(i + " ");
             }
         }

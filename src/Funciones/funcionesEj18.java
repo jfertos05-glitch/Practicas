@@ -14,13 +14,13 @@ public class funcionesEj18 {
         } else {
 
             while (numDecimal > 0) {
-                numTraducido = matematicas.Varias.pegaPorDetras(numTraducido, (numDecimal % 2));
+                numTraducido = Varias.pegaPorDetras(numTraducido, (numDecimal % 2));
                 numDecimal = numDecimal / 2;
             }
 
-            numTraducido = matematicas.Varias.voltea(numTraducido);
+            numTraducido = Varias.voltea(numTraducido);
 
-            numTraducido = matematicas.Varias.quitaPorDetras(numTraducido, 1);
+            numTraducido = Varias.quitaPorDetras(numTraducido, 1);
         }
 
         System.out.println("El número en binario es: " + numTraducido);

@@ -6,7 +6,7 @@ public class funcionesEj15 {
         System.out.print("Los números primos son: ");
 
         for (int i = 0; i <1000; i++) {
-            if (matematicas.Varias.esPrimo(i)) {
+            if (Varias.esPrimo(i)) {
                 System.out.print(i + " ");
             }
         }

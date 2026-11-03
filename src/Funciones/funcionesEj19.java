@@ -1,7 +1,6 @@
 
 package Funciones;
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class funcionesEj19 {
     public static void main(String[] args) {
@@ -29,12 +28,12 @@ public class funcionesEj19 {
                     numeroDivisor = 2;
 
                     while (numeroATransformar > 0) {
-                        numeroTransformado = matematicas.Varias.pegaPorDetras(
+                        numeroTransformado = Varias.pegaPorDetras(
                                 numeroTransformado, numeroATransformar % numeroDivisor);
                         numeroATransformar = numeroATransformar / numeroDivisor;
                     }
 
-                    numeroTransformado = matematicas.Varias.voltea(numeroTransformado);
+                    numeroTransformado = Varias.voltea(numeroTransformado);
                     numeroTransformado = numeroTransformado / 10;
 
                     System.out.println("El número es: " + numeroTransformado);
@@ -45,12 +44,12 @@ public class funcionesEj19 {
                     numeroDivisor = 8;
 
                     while (numeroATransformar > 0) {
-                        numeroTransformado = matematicas.Varias.pegaPorDetras(
+                        numeroTransformado = Varias.pegaPorDetras(
                                 numeroTransformado, numeroATransformar % numeroDivisor);
                         numeroATransformar = numeroATransformar / numeroDivisor;
                     }
 
-                    numeroTransformado = matematicas.Varias.voltea(numeroTransformado);
+                    numeroTransformado = Varias.voltea(numeroTransformado);
                     numeroTransformado = numeroTransformado / 10;
 
                     System.out.println("El número es: " + numeroTransformado);
@@ -115,15 +114,15 @@ public class funcionesEj19 {
                 System.out.print("Dime el número a transformar: ");
                 int numeroATransformar = sc.nextInt();
                 int numeroTransformado = 0;
-                int contador = matematicas.Varias.digitos(numeroATransformar) - 1;
+                int contador = Varias.digitos(numeroATransformar) - 1;
                 int numeroDivisor = 0;
 
                 if (tipoNumeroATransformar == 1) {
 
-                    for (int i = 0; i < matematicas.Varias.digitos(numeroATransformar); i++) {
-                        int num1 = matematicas.Varias.digitoN(numeroATransformar, i);
+                    for (int i = 0; i < Varias.digitos(numeroATransformar); i++) {
+                        int num1 = Varias.digitoN(numeroATransformar, i);
                         numeroTransformado = (int) (numeroTransformado
-                                + num1 * matematicas.Varias.potencia(2, contador));
+                                + num1 * Varias.potencia(2, contador));
                         contador--;
                     }
 
@@ -131,10 +130,10 @@ public class funcionesEj19 {
 
                 } else if (tipoNumeroATransformar == 3) {
 
-                    for (int i = 0; i < matematicas.Varias.digitos(numeroATransformar); i++) {
-                        int num1 = matematicas.Varias.digitoN(numeroATransformar, i);
+                    for (int i = 0; i < Varias.digitos(numeroATransformar); i++) {
+                        int num1 = Varias.digitoN(numeroATransformar, i);
                         numeroTransformado = (int) (numeroTransformado
-                                + num1 * matematicas.Varias.potencia(2, contador));
+                                + num1 * Varias.potencia(2, contador));
                         contador--;
                     }
 
@@ -143,22 +142,22 @@ public class funcionesEj19 {
                     numeroDivisor = 8;
 
                     while (numeroATransformar2 > 0) {
-                        numeroTransformado = matematicas.Varias.pegaPorDetras(
+                        numeroTransformado = Varias.pegaPorDetras(
                                 numeroTransformado, numeroATransformar2 % numeroDivisor);
                         numeroATransformar2 = numeroATransformar2 / numeroDivisor;
                     }
 
-                    numeroTransformado = matematicas.Varias.voltea(numeroTransformado);
+                    numeroTransformado = Varias.voltea(numeroTransformado);
                     numeroTransformado = numeroTransformado / 10;
 
                     System.out.println("El número es: " + numeroTransformado);
 
                 } else if (tipoNumeroATransformar == 4) {
 
-                    for (int i = 0; i < matematicas.Varias.digitos(numeroATransformar); i++) {
-                        int num1 = matematicas.Varias.digitoN(numeroATransformar, i);
+                    for (int i = 0; i < Varias.digitos(numeroATransformar); i++) {
+                        int num1 = Varias.digitoN(numeroATransformar, i);
                         numeroTransformado = (int) (numeroTransformado
-                                + num1 * matematicas.Varias.potencia(2, contador));
+                                + num1 * Varias.potencia(2, contador));
                         contador--;
                     }
 
@@ -218,15 +217,15 @@ public class funcionesEj19 {
                 System.out.print("Dime el número a transformar: ");
                 int numeroATransformar = sc.nextInt();
                 int numeroTransformado = 0;
-                int contador = matematicas.Varias.digitos(numeroATransformar) - 1;
+                int contador = Varias.digitos(numeroATransformar) - 1;
                 int numeroDivisor = 0;
 
                 if (tipoNumeroATransformar == 1) {
 
-                    for (int i = 0; i < matematicas.Varias.digitos(numeroATransformar); i++) {
-                        int num1 = matematicas.Varias.digitoN(numeroATransformar, i);
+                    for (int i = 0; i < Varias.digitos(numeroATransformar); i++) {
+                        int num1 = Varias.digitoN(numeroATransformar, i);
                         numeroTransformado = (int) (numeroTransformado
-                                + num1 * matematicas.Varias.potencia(8, contador));
+                                + num1 * Varias.potencia(8, contador));
                         contador--;
                     }
 
@@ -234,10 +233,10 @@ public class funcionesEj19 {
 
                 } else if (tipoNumeroATransformar == 2) {
 
-                    for (int i = 0; i < matematicas.Varias.digitos(numeroATransformar); i++) {
-                        int num1 = matematicas.Varias.digitoN(numeroATransformar, i);
+                    for (int i = 0; i < Varias.digitos(numeroATransformar); i++) {
+                        int num1 = Varias.digitoN(numeroATransformar, i);
                         numeroTransformado = (int) (numeroTransformado
-                                + num1 * matematicas.Varias.potencia(8, contador));
+                                + num1 * Varias.potencia(8, contador));
                         contador--;
                     }
 
@@ -246,22 +245,22 @@ public class funcionesEj19 {
                     numeroDivisor = 2;
 
                     while (numeroATransformar2 > 0) {
-                        numeroTransformado = matematicas.Varias.pegaPorDetras(
+                        numeroTransformado = Varias.pegaPorDetras(
                                 numeroTransformado, numeroATransformar2 % numeroDivisor);
                         numeroATransformar2 = numeroATransformar2 / numeroDivisor;
                     }
 
-                    numeroTransformado = matematicas.Varias.voltea(numeroTransformado);
+                    numeroTransformado = Varias.voltea(numeroTransformado);
                     numeroTransformado = numeroTransformado / 10;
 
                     System.out.println("El número es: " + numeroTransformado);
 
                 } else if (tipoNumeroATransformar == 4) {
 
-                    for (int i = 0; i < matematicas.Varias.digitos(numeroATransformar); i++) {
-                        int num1 = matematicas.Varias.digitoN(numeroATransformar, i);
+                    for (int i = 0; i < Varias.digitos(numeroATransformar); i++) {
+                        int num1 = Varias.digitoN(numeroATransformar, i);
                         numeroTransformado = (int) (numeroTransformado
-                                + num1 * matematicas.Varias.potencia(8, contador));
+                                + num1 * Varias.potencia(8, contador));
                         contador--;
                     }
 
@@ -347,12 +346,12 @@ public class funcionesEj19 {
                     int numeroATransformar2 = numeroATransformar;
 
                     while (numeroATransformar2 > 0) {
-                        numeroTransformado = matematicas.Varias.pegaPorDetras(
+                        numeroTransformado = Varias.pegaPorDetras(
                                 numeroTransformado, numeroATransformar2 % numeroDivisor);
                         numeroATransformar2 = numeroATransformar2 / numeroDivisor;
                     }
 
-                    numeroTransformado = matematicas.Varias.voltea(numeroTransformado);
+                    numeroTransformado = Varias.voltea(numeroTransformado);
                     numeroTransformado = numeroTransformado / 10;
 
                     System.out.println("El número es: " + numeroTransformado);
@@ -364,12 +363,12 @@ public class funcionesEj19 {
                     int numeroATransformar2 = numeroATransformar;
 
                     while (numeroATransformar2 > 0) {
-                        numeroTransformado = matematicas.Varias.pegaPorDetras(
+                        numeroTransformado = Varias.pegaPorDetras(
                                 numeroTransformado, numeroATransformar2 % numeroDivisor);
                         numeroATransformar2 = numeroATransformar2 / numeroDivisor;
                     }
 
-                    numeroTransformado = matematicas.Varias.voltea(numeroTransformado);
+                    numeroTransformado = Varias.voltea(numeroTransformado);
                     numeroTransformado = numeroTransformado / 10;
 
                     System.out.println("El número es: " + numeroTransformado);

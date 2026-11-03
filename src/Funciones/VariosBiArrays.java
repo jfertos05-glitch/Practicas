@@ -1,4 +1,4 @@
-package matematicas;
+package Funciones;
 
 public class VariosBiArrays {
     public static int[][] generaArrayBiInt(int fila,int columna, int minimo, int maximo) {
@@ -24,7 +24,7 @@ public class VariosBiArrays {
     }
 
     public static int[] columnaDeArrayBilnt(int arrayBi[][], int columna) {
-        int arrayColumna[] = new int[arrayBi.length];
+        int[] arrayColumna = new int[arrayBi.length];
 
         for (int filaF = 0; filaF < arrayBi.length; filaF++) {
             for (int columnaF = 0; columnaF < arrayBi[filaF].length; columnaF++) {
@@ -67,7 +67,6 @@ public class VariosBiArrays {
         int fila = coordenadas[0];
         int columna = coordenadas[1];
 
-        // Comprobar si es el mínimo de su fila
         for (int columnaF = 0; columnaF < arrayBi[fila].length; columnaF++) {
             if (arrayBi[fila][columnaF] < numero) {
                 return false;

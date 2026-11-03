@@ -1,5 +1,5 @@
 
-package matematicas;
+package Funciones;
 
 public class VariosArrays {
 
