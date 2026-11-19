@@ -1,4 +1,4 @@
-package POO;
+package POO.Ejercicio2;
 import java.util.Scanner;
 
 public class pooEj2 {
